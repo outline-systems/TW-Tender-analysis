@@ -1,0 +1,116 @@
+/* Baywide Dingos / TradeOS visual theme for Tender Analysis.
+   Load after the inline application styles:
+   <link rel="stylesheet" href="baywide-theme.css">
+*/
+:root{
+  --teal:#2d5bff;
+  --teal-dark:#1946e8;
+  --teal-deep:#1739b5;
+  --teal-bright:#2d5bff;
+  --teal-soft:#7d9aff;
+  --teal-tint:#edf2ff;
+  --teal-tint2:#dce6ff;
+  --gold-ink:#1946e8;
+  --ink:#111318;
+  --ink2:#252a33;
+  --gray:#626a76;
+  --gray2:#98a0ad;
+  --canvas:#f4f5f7;
+  --card:#fff;
+  --line:#e5e8ee;
+  --line2:#d9dee7;
+  --dark:#0c0d0f;
+  --dark2:#17191d;
+  --darkline:#292d34;
+  --green:#199b63;
+  --green-soft:#e7f8ef;
+  --radius:14px;
+  --radius-s:10px;
+  --font:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+
+body{background:var(--canvas);color:var(--ink);font-size:14px}
+#sidebar{width:228px;min-width:228px;background:#0c0d0f}
+.sb-brand{padding:20px 18px 18px;border-bottom:1px solid #24272d}
+.sb-logo{background:var(--teal);border-radius:10px}
+.sb-logo-img{width:38px;height:38px}
+.sb-brandname{font-size:15px}
+.sb-workspace{padding:20px 18px 14px}
+.sb-ws-label{color:#7d9aff}
+.sb-ws-ref{font-size:15px}
+.sb-nav{padding:8px 10px}
+.sb-item{border-radius:10px;padding:10px 12px;margin:3px 0;color:#b9bec8;font-size:13px}
+.sb-item:hover{background:#1a1d22;color:#fff}
+.sb-item.active{background:var(--teal);color:#fff;font-weight:700}
+.sb-item.active .n{color:#dce6ff}
+.sb-item .badge.done{background:var(--green);border-color:var(--green);color:#fff}
+.sb-bottom{padding:14px 16px 16px;border-top:1px solid #24272d}
+.sb-admin,.sb-help{border-radius:10px}
+.sb-help{background:#17191d;border-color:#292d34}
+.sb-help-q{background:var(--teal);color:#fff}
+
+#topbar{padding:14px 32px;background:rgba(244,245,247,.94);border-bottom:1px solid var(--line)}
+.tb-select{border:1px solid var(--line2);border-radius:10px;min-height:36px;padding:8px 34px 8px 12px;background-color:#fff}
+.tb-plus{width:36px;height:36px;border-radius:10px;background:var(--teal)}
+.tb-plus:hover{background:var(--teal-dark)}
+.tb-btn{border-radius:10px;border-color:var(--line2);background:#fff}
+.tb-btn:hover{border-color:#b8c2d2}
+.tb-btn-dark{background:var(--teal);border-color:var(--teal);color:#fff}
+.tb-btn-dark:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.tb-avatar{background:#e9edf4;border-color:var(--line2);color:#273142}
+
+#content{max-width:1440px;padding:38px 44px 88px}
+.kicker{color:var(--gray);letter-spacing:.12em}
+.page-h1{font-size:36px;letter-spacing:-.035em}
+.page-h1:after{content:""}
+.page-sub{color:var(--gray)}
+.card,.stat{border-color:var(--line);border-radius:var(--radius);box-shadow:0 1px 2px rgba(17,19,24,.025)}
+.card{padding:22px 24px}
+.card-dark,.stat.stat-dark{background:#111318;border-color:#111318}
+.card-dark .card-label,.stat.stat-dark .s-label{color:#7d9aff}
+.stat.stat-teal{background:var(--teal);border-color:var(--teal);color:#fff}
+.stat.stat-teal .s-value{color:#fff}
+.stat.stat-teal .s-label,.stat.stat-teal .s-sub{color:#dce6ff}
+
+.field input,.field select,.field textarea{border-color:var(--line2);border-radius:9px}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(45,91,255,.14)}
+.btn{border-color:var(--line2);border-radius:9px}
+.btn:hover{border-color:#b8c2d2}
+.btn-teal{background:var(--teal);border-color:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.btn-dark{background:#111318;border-color:#111318}
+.btn-dark:hover{background:#000}
+.btn-ghost:hover{background:#edf0f5}
+
+.tbl-wrap{border-color:var(--line);border-radius:11px}
+.tbl th{background:#f7f8fa;color:#626a76;border-color:var(--line)}
+.tbl td{border-color:#edf0f4}
+.tbl tr:hover td{background:#f8faff}
+.tbl tfoot td,.tbl .totrow td{background:#f1f4f8;border-color:var(--line2)}
+.tbl .secrow td{background:#edf2ff;color:var(--teal-deep)}
+.tbl input:focus,.tbl select:focus{border-color:var(--teal);box-shadow:0 0 0 2px rgba(45,91,255,.14)}
+
+.chip-teal{background:var(--teal-tint);color:var(--teal-deep)}
+.chip-solid{background:var(--teal);color:#fff}
+.chip-gray{background:#edf0f4;color:#626a76}
+.chip-green{background:var(--green-soft);color:var(--green)}
+.tab{border-color:var(--line2);border-radius:9px;background:#fff}
+.tab.on{background:#111318;border-color:#111318;color:#fff}
+
+.status-g{background:var(--green-soft)!important;color:var(--green)}
+.modal{border-radius:16px;box-shadow:0 24px 70px rgba(17,19,24,.2)}
+.toast{border-radius:10px}
+.pct-bar>i{background:var(--teal)}
+.link{color:var(--teal-deep)}
+
+@media(max-width:900px){
+  #sidebar{width:76px;min-width:76px}
+  .sb-brand{justify-content:center;padding:16px 8px}
+  .sb-brandname,.sb-workspace,.sb-item .lbl,.sb-item .badge,.sb-bottom button,.sb-closing{display:none}
+  .sb-nav{padding:8px}
+  .sb-item{justify-content:center;padding:12px 8px}
+  .sb-item .n{width:auto;font-size:11px}
+  #topbar{padding:10px 16px}
+  .tb-right .tb-btn:not(.tb-btn-dark),.tb-saved{display:none}
+  #content{padding:26px 18px 60px}
+}
